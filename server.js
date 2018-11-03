@@ -3,7 +3,7 @@ var bodyParser=require("body-parser")
 var path=require("path")
 
 var app=express()
-var PORT=3500
+var PORT=process.env.PORT ||3500
 
 //require routing
 require("./routes/htmlRoutes.js")(app);
