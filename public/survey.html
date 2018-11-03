@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Friend Finder</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="Jumbotron">
+			<h1>This is the Survey</h1>
+			<br>
+			<h4>Pick your reaction to the following activites
+				<br>Your answers will be entered into our patented friend matching algorithm and you will be given your ideal friend
+				match. Please be honest for best results.</h4>
+		</div>
+		<input type='text' id='userName' placeholder="Name">
+		<form>
+			<p>Extreme Sports</p>
+			<div class="btn-group btn-group-toggle" id='question1' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest1" id="1op1">When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest1" id="1op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest1" id="1op3">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest1" id="1op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest1" id="1op5">Hell ya!
+				</label>
+			</div>
+			<p>Chillin' with friends</p>
+			<div class="btn-group btn-group-toggle" id='question2' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest2" id="2op1" >When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest2" id="2op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest2" id="2op3">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest2" id="2op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest2" id="2op5">Hell ya!
+				</label>
+			</div>
+			<p>Canoeing</p>
+			<div class="btn-group btn-group-toggle" id='question3' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest3" id="3op1">When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest3" id="3op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest3" id="3op3">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest3" id="3op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest3" id="3op5">Hell ya!
+				</label>
+			</div>
+			<p>Wine Tasting</p>
+			<div class="btn-group btn-group-toggle" id='question4' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest4" id="4op1">When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest4" id="4op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest4" id="4op3">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest4" id="4op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest4" id="4op5">Hell ya!
+				</label>
+			</div>
+			<p>Shopping</p>
+			<div class="btn-group btn-group-toggle" id='question5' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest5" id="5op1">When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest5" id="5op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest5" id="5op3">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest5" id="5op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest5" id="5op5">Hell ya!
+				</label>
+			</div>
+			<p>Video Games</p>
+			<div class="btn-group btn-group-toggle" id='question6' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest6" id="6op1" >When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest6" id="6op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest6" id="6op3 ">Meh
+				</label>
+				<label class="btn btn-secondary ">
+					<input type="radio" value='4' name="quest6" id="6op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary ">
+					<input type="radio" value='5' name="quest6" id="6op5 ">Hell ya!
+				</label>
+			</div>
+			<p>Karaoke</p>
+			<div class="btn-group btn-group-toggle" id='question7' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest7" id="7op1">When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest7" id="7op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest7" id="7op3" >Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest7" id= "7op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest7" id="7op5" >Hell ya!
+				</label>
+			</div>
+			<p>Camping</p>
+			<div class="btn-group btn-group-toggle" id='question8' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest8" id="8op1">When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest8" id="8op2" >Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest8" id= "8op3 ">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest8" id="8op4" >Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest8" id="8op5" >Hell ya!
+				</label>
+			</div>
+			<p>Concerts</p>
+			<div class="btn-group btn-group-toggle" id='question9' data-toggle="buttons">
+				<label class="btn btn-secondary" >
+					<input type="radio" value='1' name="quest9" id= "9op1" >When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest9" id= "9op2" >Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest9" id= "9op3">Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest9" id="9op4" >Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest9" id= "9op5">Hell ya!
+				</label>
+			</div>
+			<p>Travelling</p>
+			<div class="btn-group btn-group-toggle" id='question10' data-toggle="buttons">
+				<label class="btn btn-secondary">
+					<input type="radio" value='1' name="quest10" id="10op1" >When pigs Fly
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='2' name="quest10" id= "10op2">Not really my thing
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='3' name="quest10" id="10op3" >Meh
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='4' name="quest10" id= "10op4">Sounds kinda Cool
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" value='5' name="quest10" id="10op5" >Hell ya!
+				</label>
+			</div>
+		</form>
+		<button class='btn btn-large btn-warning' id='submitBtn'>Submit</button>
+		<button class='btn btn-large btn-danger' id='homeBtn'>Home</button>
+	</div>
+</body>
+<script src="friends.js"> </script>
+</html>
